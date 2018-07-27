@@ -12,6 +12,7 @@ describe 'visitor' do
       trail_1 = Trail.create(length: 123, name: "sadf", address: "asdf")
       trail_2 = Trail.create(length: 204, name: "kjhsdf", address: "ksdf")
 
+      # got stuck creating new trails through trips...
       trip.trips_trails.create(trail: trail_1)
       trip.trips_trails.create(trail: trail_2)
 
